@@ -8,7 +8,7 @@ def main():
 def is_dampened_safe(line):
     cells = list(map(int, line.split()))
     for i in range(len(cells)):
-        if is_safe(cells[:i] + cells[i + 1:]):
+        if is_safe(cells[:i] + cells[i + 1 :]):
             return True
     return False
 
